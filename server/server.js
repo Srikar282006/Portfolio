@@ -34,6 +34,8 @@ app.get('/', (req, res) => {
 app.post('/send_email', (req, res) => {
     const { name, email, subject, message } = req.body;
 
+    app.get("/test",async(req,res)=>
+   { return res.json({message:"Intaila"})} )
     
     const mailOptions = {
         from: email,
