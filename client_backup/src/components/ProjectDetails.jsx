@@ -28,11 +28,24 @@ const ProjectDetails = () => {
     navigate("/projects");
     return null;
   }
+   const particlesInit = useCallback(async (engine) => {
+      await loadSlim(engine);
+    }, []);
 
   return (
+    <>
+    {dark && (
+            <Particles
+              id="tsparticles"
+              init={particlesInit}
+              options={starOptions}
+              className="absolute top-0 left-0 w-full h-full -z-10"
+            />
+          )}
+
     <div
       className={`min-h-screen py-10 px-5 md:px-16 ${
-        dark ? "bg-[#0b0c10] text-white" : "bg-white text-black"
+        dark ? " text-white" : "bg-white text-black"
       }`}
     >
       <button
@@ -111,6 +124,7 @@ const ProjectDetails = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
