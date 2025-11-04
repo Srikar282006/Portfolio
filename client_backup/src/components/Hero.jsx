@@ -107,22 +107,26 @@ const nav=useNavigate()
 <div className="mt-5 flex justify-center md:justify-start gap-4">
   {/* GitHub */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-    <FaGithub className="text-lg text-black dark:text-white" />
+  <a href="https://github.com/Srikar282006" target="_blank"><FaGithub className="text-lg text-black dark:text-white" /></a>
+    
   </div>
 
   {/* LinkedIn */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-    <TiSocialLinkedin className="text-lg text-black dark:text-white" />
+<a href="https://www.linkedin.com/in/srikar-acharya-madabhushani-29ba87344/" target="_blank"><TiSocialLinkedin className="text-lg text-black dark:text-white" /></a>
+    
   </div>
 
   {/* Mail */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-    <CiMail className="text-lg text-black dark:text-white" />
+<a href="mailto:srikarmach@gmail.com" target="_blank" ><CiMail className="text-lg text-black dark:text-white" /></a>
+    
   </div>
 
   {/* Phone */}
   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 cursor-pointer transition">
-    <IoCallOutline className="text-lg text-black dark:text-white" />
+    <a href="tel:+91897837024" target="_blank"><IoCallOutline className="text-lg text-black dark:text-white" /></a>
+    
   </div>
 </div>
 

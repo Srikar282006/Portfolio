@@ -2,6 +2,20 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaGithub } from "react-icons/fa6";
 import { useTheme } from "./ThemeContext";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+
+const starOptions = {
+  background: { color: "#000000" },
+  particles: {
+    number: { value: 120, density: { enable: true, area: 800 } },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.8 },
+    size: { value: { min: 1, max: 3 } },
+    move: { enable: true, speed: 0.6, outModes: "out" },
+  },
+};
 
 const ProjectDetails = () => {
   const { dark } = useTheme();

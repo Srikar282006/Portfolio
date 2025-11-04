@@ -7,6 +7,7 @@ import { useTheme } from "./ThemeContext";
 import recommender from "../assets/recommender.png";
 import recipe from "../assets/recipe.png";
 import videocall from "../assets/videocall.png";
+import usermanager from  "../assets/usermanager.png"
 
 const starOptions = {
   background: { color: "#000000" },
@@ -59,7 +60,7 @@ const Projects = ({ selectedTag = "All" }) => {
       gitlink: "https://github.com/Srikar282006/VideoCall_App",
     },
     {
-      image: videocall,
+      image: usermanager,
       title: "User Manager",
       description:
         "An admin dashboard that enables administrators to add, edit, and delete users, viewable in both table and card layouts with a secure and responsive design.",

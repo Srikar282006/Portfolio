@@ -199,7 +199,7 @@ const ContactForm = () => {
                         <div>
                             <label htmlFor="subject" className={`block  font-semibold  mb-1 ${dark?"text-gray-200":"text-gray-700"}`}>Subject</label>
                             <input
-                                type="tel"
+                                type="text"
                                 id="subject"
                                 name="subject"
                                 value={formData.subject} // Controlled component
